@@ -495,7 +495,7 @@ article.portfolio ul li .info p {
 #filter a {
 	font-size:12px;
 	text-transform:uppercase;
-	color:#f4f4f4;
+	color:#030303;
 	padding:5px 20px 5px 5px;
 	margin:0 0 0 5px;
 	display:inline;
@@ -629,26 +629,26 @@ transition-duration:.8s;
 	background-color:#2a2c2d;
 }
 .light {
-	background-color:#f4f4f4;
-	color:#424242;
+	background-color:#ffff;
+	color:#030303;
 }
 .dark {
-	background-color:#2a2a2a;
-	color:#f1f1f1;
+	background-color:#ebebeb;
+	color:#030303;
 }
 .dark p {
 	color:#3a3a3a;
 }
 .dark p {
-	color:#ddd;
+	color:#030303;
 }
 .light .title h1 {
 	color:#424242;
 	text-shadow:0 1px #fff;
 }
 .dark .title h1 {
-	color:#ededec;
-	text-shadow:0 1px #010101;
+	color:#030303;
+	text-shadow:0 1px #e6e6e6;
 }
 .light .title h1 span {
 	color:#f67c05;
@@ -660,7 +660,7 @@ transition-duration:.8s;
 	color:#f67c05;
 	border-left:2px dotted #f67c05;
 	padding:0 0 0 20px;
-	text-shadow:0 1px #010101;
+	text-shadow:0 1px #e6e6e6;
 }
 .image {
 	width:100%;
