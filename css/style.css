@@ -37,12 +37,12 @@ p {
 a {
 	outline:0;
 	text-decoration:none;
-	color:#f67c05;
+	color:#000;
 }
 a:hover {
 	outline:0;
 	text-decoration:none;
-	color:#f67c05;
+	color:#000;
 }
 a img {
 	border:none;
@@ -120,13 +120,13 @@ header.light nav #menu ul li a {
 	color:#2c2c2c;
 }
 header.light nav #menu ul li a:hover {
-	color:#f67c05;
+	color:#000;
 }
 header.light nav #menu ul li a.active {
-	color:#f67c05;
+	color:#000;
 }
 header.light nav #menu ul li a.active:after {
-	background-color:#f67c05;
+	background-color:#000;
 }
 header.dark {
 	background-color:#212121;
@@ -143,13 +143,13 @@ header.dark nav #menu ul li a {
 	color:#ededec;
 }
 header.dark nav #menu ul li a:hover {
-	color:#f67c05;
+	color:#000;
 }
 header.dark nav #menu ul li a.active {
-	color:#f67c05;
+	color:#000;
 }
 header.dark nav #menu ul li a.active:after {
-	background-color:#f67c05;
+	background-color:#000;
 }
 section#slider {
 	background-color:#f1f1f1;
@@ -201,7 +201,7 @@ section#slider .info.blue p {
 section#slider .more {
 	color:#fff;
 	width:100px;
-	background:#f67c05;
+	background:#000;
 	text-align:center;
 	float:right;
 	padding:10px 10px;
@@ -387,7 +387,7 @@ section#slider .more {
 	text-transform:uppercase;
 	letter-spacing:1px;
 	font-weight:400;
-	border-left:5px solid #f67c05;
+	border-left:5px solid #000;
 	padding:0 0 0 10px;
 }
 .content h1 {
@@ -516,7 +516,7 @@ transition-duration:.4s;
 transition-duration:.8s;
 }
 #filter a.filter-active {
-	background-color:#f67c05;
+	background-color:#000;
 	color:#fff;
 }
 #box {
@@ -619,9 +619,9 @@ transition-duration:.8s;
 	text-transform:uppercase;
 	text-decoration:none;
 	font-weight:700;
-	background:url(../images/icons/send.png) center center no-repeat #f67c05;;
-	width:200px;
-	height:75px;
+	background:url(../images/icons/send.png) center center no-repeat #666;
+	width:440px;
+	height:50px;
 	border-radius:5px;
 }
 .subbutton:hover {
@@ -651,14 +651,14 @@ transition-duration:.8s;
 	text-shadow:0 1px #e6e6e6;
 }
 .light .title h1 span {
-	color:#f67c05;
-	border-left:2px dotted #f67c05;
+	color:#666;
+	border-left:2px dotted #000;
 	padding:0 0 0 20px;
 	text-shadow:0 1px #fff;
 }
 .dark .title h1 span {
-	color:#f67c05;
-	border-left:2px dotted #f67c05;
+	color:#666;
+	border-left:2px dotted #000;
 	padding:0 0 0 20px;
 	text-shadow:0 1px #e6e6e6;
 }
@@ -760,19 +760,19 @@ transition-duration:.8s;
 	color:#fff;
 }
 .accordion a:hover {
-	background-color:#f67c05;
+	background-color:#000;
 }
 .accordion a.selected {
-	background-color:#f67c05;
+	background-color:#000;
 	background-position:0 20px;
 	border-radius:2px;
 	background-image:url(../images/skills.png);
 	background-repeat:no-repeat;
 }
-img.social {
+/*img.social {
 	float:left;
 	margin:10px 5px 20px 0;
-}
+}*/
 .divider {
 	margin:30px 0;
 	clear:both;
@@ -801,14 +801,14 @@ img.social {
 	color:#fff;
 }
 .tabs-nav li a:hover {
-	background-color:#f67c05;
+	background-color:#000;
 	background-position:0 20px;
 	border-radius:2px;
 	background-image:url(../images/skills.png);
 	background-repeat:no-repeat;
 }
 .tabs-nav li.active-tab a {
-	background-color:#f67c05;
+	background-color:#000;
 	background-position:0 20px;
 	border-radius:2px;
 	background-image:url(../images/skills.png);
@@ -925,7 +925,7 @@ img.social {
 }
 #skills li span {
 	background-image:url(../images/skills.png);
-	background-color:#f67c05;
+	background-color:#000;
 	background-repeat:no-repeat;
 }
 footer a.twitter {
@@ -1010,4 +1010,33 @@ footer a.twitter .time {
 }
 .closed {
 	background:#fff url(../images/icons/setting.png) no-repeat center center;
+}
+
+/* Footer
+----------------------------------------------*/
+ul.social{
+  display: block;
+  margin: 5% 0;
+  list-style-type: none;
+  text-align: center;
+}
+ul.social li{
+  font-size: 2em;
+  display: inline;
+  padding: 0 1%;
+}
+ul.social li a{
+  color: #666;
+}
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.instagram a:hover{color: rgb(81,127,237);}
+/*ul.social li.youtube a:hover{color: rgb(187,0,0);}
+ul.social li.flickr a:hover{color: rgb(255,0,132);}*/
+ul.social li.linkedin a:hover{color: rgb(0,123,182);}
+
+p.copyright{
+  text-align: center;
+  color: #666;
+  font-size: 0.75em;
 }
