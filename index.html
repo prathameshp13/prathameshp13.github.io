@@ -37,7 +37,7 @@
     </div>
     <div id="menu">
       <ul>
-        <li> <a href="#slider">Home</a> <a href="#work">Folio</a> <a href="#blog">Blog</a> <a href="#about">About</a> <a href="#services">Store</a> <a href="#contact">Contact</a> </li>
+        <li> <a href="#home">Home</a> <a href="#work">Folio</a> <a href="#blog">Blog</a> <a href="#about">About</a> <a href="#services">Store</a> <a href="#contact">Contact</a> </li>
       </ul>
     </div>
   </nav>
@@ -91,15 +91,17 @@
 <section id="home" class="slider">
   <div id="content-slider" class="flexslider">
     <ul class="slides">
-      <li><img src="images/sample/orange.png" alt=""></li>
-      <li><img src="images/sample/gray.png" alt=""></li>
+      <li><img src="images/main_slider/Great_Egret.jpg" alt=""></li>
+      <li><img src="images/main_slider/Egret.jpg" alt=""></li>
+      <li><img src="images/main_slider/Peacock.jpg" alt=""></li>
+      <li><img src="images/main_slider/Fishing.jpg" alt=""></li>
     </ul>
   </div>
 </section>
 <section id="work" class="container dark">
   <div class="content">
     <div class="title icon-preview">
-      <h1>Folio <span>My selected projects</span></h1>
+      <h1>Folio <span>My Gallary</span></h1>
       <div class="description">
         <nav id="filter"></nav>
       </div>
@@ -107,45 +109,45 @@
     <article class="portfolio">
       <ul id="stage">
         <li data-tags="Wildlife">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/fall.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/close_flight.jpg"><img src="images/gallary/close_flight.jpg" alt=""></a></div>
           <div class="info">
-            <h3>Slowmo Fall</h3>
-            <p>Photo manipulation</p>
+            <h3>Great Egret</h3>
+            <p>Bird in Flight (BIF)</p>
           </div>
         </li>
         <li data-tags="Nature, Wildlife">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/coke.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/Puma.jpg"><img src="images/gallary/Puma.jpg" alt=""></a></div>
           <div class="info">
-            <h3>Speed Audi</h3>
-            <p>Marketing</p>
+            <h3>Mountain Lion</h3>
+            <p>Mammels Portraits</p>
           </div>
         </li>
         <li data-tags="Landscape">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/camera.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/Beach.jpg"><img src="images/gallary/Beach.jpg" alt=""></a></div>
           <div class="info">
-            <h3>The Wild One</h3>
-            <p>Illustration</p>
+            <h3>The Beach</h3>
+            <p>Long Exposure Landscape</p>
           </div>
         </li>
         <li data-tags="Landscape">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/olympus.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/Park.jpg"><img src="images/gallary/Park.jpg" alt=""></a></div>
           <div class="info">
-            <h3>Hyperspace</h3>
-            <p>Illustration</p>
+            <h3>Craig Regional Park</h3>
+            <p>Landscapes</p>
           </div>
         </li>
         <li data-tags="Nature">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/box.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/Parrots.jpg"><img src="images/gallary/Parrots.jpg" alt=""></a></div>
           <div class="info">
-            <h3>Boxee</h3>
-            <p>Product Design</p>
+            <h3>Red Crowned Amazon</h3>
+            <p>Animal Behaviour</p>
           </div>
         </li>
         <li data-tags="Wildlife">
-          <div class="thumb"><a rel="lightbox" href="images/sample/fall.jpg"><img src="images/sample/low-fi.jpg" alt=""></a></div>
+          <div class="thumb"><a rel="lightbox" href="images/gallary/Canada_goose.jpg"><img src="images/gallary/Canada_goose.jpg" alt=""></a></div>
           <div class="info">
-            <h3>Moon Jelly</h3>
-            <p>Photography</p>
+            <h3>Canada Goose</h3>
+            <p>Bird Portraits</p>
           </div>
         </li>
       </ul>
@@ -362,7 +364,7 @@
 <section id="contact" class="container dark second">
   <div class="content">
     <div class="title icon-phone">
-      <h1>Contact <span>What we offer</span></h1>
+      <h1>Contact <span> Join my tribe</span></h1>
       <!--<div class="description"> <a href="#"><img src="images/icons/instagram.png" alt="" class="social"></a> <a href="#"><img src="images/icons/flickr.png" alt="" class="social"></a> <a href="#"><img src="images/icons/dribbble.png" alt="" class="social"></a></div>-->
     </div>
     <div class="full">
@@ -439,14 +441,14 @@ var options = {
     prependPreloader: false,
     prependPreloadingComplete: "#sequence-preloader, #slideshow",
     animateStartingFrameIn: true,
-    transitionThreshold: 500,
+    transitionThreshold: 100,
     nextButtonAlt: " ",
     prevButtonAlt: " ",
     afterPreload: function () {
-        $(".prev, .next").fadeIn(500);
+        $(".prev, .next").fadeIn(100);
         if (!slideShow.transitionsSupported) {
             $("#slideshow").animate({
-                "opacity": "1"
+                "opacity": "0"
             }, 1000);
         }
     }
@@ -454,7 +456,7 @@ var options = {
 var slideShow = $("#slideshow").sequence(options).data("sequence");
 if (!slideShow.transitionsSupported || slideShow.prefix == "-o-") {
     $("#slideshow").animate({
-        "opacity": "1"
+        "opacity": "0"
     }, 1000);
     slideShow.preloaderFallback();
 }
