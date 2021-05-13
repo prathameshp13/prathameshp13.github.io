@@ -103,7 +103,7 @@ header nav #menu ul li a.active:after {
 	bottom:-6px;
 	left:0;
 	height:1px;
-	width:25px;
+	width:45px;
 }
 header.light {
 	background-color:#fff;
@@ -252,21 +252,21 @@ section#slider .more {
 	position:relative;
 }
 .content .title h1 {
-	font-size:60px;
+	font-size:16px;
 	text-transform:uppercase;
 	letter-spacing:1px;
-	font-family:'Russo One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .content .title h1 >img {
 	position:relative;
 	top:5px;
 }
 .content .title h1 span {
-	font-size:15px;
+	font-size:-15px;
 	font-family: 'Montserrat', sans-serif;
 	position:relative;
-	top:-15px;
-	padding:0 0 0 20px;
+	top:0px;
+	padding:0 0 0 10px;
 	letter-spacing:0;
 }
 .content .title .description {
@@ -493,9 +493,9 @@ article.portfolio ul li .info p {
 	margin:20px 0;
 }
 #filter a {
-	font-size:11px;
+	font-size:12px;
 	text-transform:uppercase;
-	color:#323232;
+	color:#f4f4f4;
 	padding:5px 20px 5px 5px;
 	margin:0 0 0 5px;
 	display:inline;
@@ -508,7 +508,7 @@ transition-duration:.4s;
 #filter a:hover {
 	color:#fff;
 	background-color:#363333;
-	box-shadow:-1px 1px #dddddc;
+	box-shadow:-1px 1px #424242;
 -webkit-transition-duration:.8s;
 -moz-transition-duration:.8s;
 -o-transition-duration:.8s;
